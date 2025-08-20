@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+
+    a,
+    h1 {
+        font-family: bol;
+    }
+
+}
+
+#left-side-content {
+    >div {
+        >:nth-of-type(1) {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-block: 40px;
+
+            >h2 {
+                font-size: 130px;
+                color: var(--color-myBlue);
+            }
+
+            >h4 {
+                font-size: 24px;
+                color: gray;
+            }
+        }
+
+        >:nth-of-type(2) {
+            >ul {
+                >li {
+                    margin-block: 12px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    * {
+                        font-size: 18px;
+                    }
+
+                    >h2 {
+                        font-family: med;
+                        color: rgb(158, 156, 156);
+                    }
+
+                    >h4 {
+                        font-family: bol;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.blurbg {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+}
+@layer theme{
+        .firstAnime {
+        animation: bdr1 3s ease-out infinite alternate;
+    }
+
+    .secondAnime {
+        animation: bdr2 3s ease-out alternate infinite;
+    }
+}
+
+@theme {
+    --color-myBlue: #5382D0;
+    --color-darkBlue: #1C253F;
+
+
+}
+
+@font-face {
+    font-family: reg;
+    src: url(../font/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: med;
+    src: url(../font/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+    font-family: bol;
+    src: url(../font/CormorantGaramond-Bold.ttf);
+}
+@keyframes bdr1 {
+    0% {
+        border-radius: 58% 34% 42% 37% / 52% 30% 68% 44%;
+    }
+
+    50% {
+        border-radius: 34% 54% 30% 59% / 75% 59% 36% 33%;
+    }
+
+    100% {
+        border-radius: 61% 43% 75% 27% / 87% 33% 46% 20%;
+    }
+}
+
+@keyframes bdr2 {
+    0% {
+        border-radius: 61% 43% 75% 27% / 87% 33% 46% 20%;
+    }
+
+    50% {
+        border-radius: 58% 34% 42% 37% / 52% 30% 68% 44%;
+    }
+
+    100% {
+        border-radius: 34% 54% 30% 59% / 75% 59% 36% 33%;
+    }
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(../font/Caveat-Bold.ttf);
+}
