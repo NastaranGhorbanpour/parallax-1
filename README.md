@@ -2,6 +2,7 @@
 ## A responsive parallax
 
 ### Parallax scroll effect built entirely with *HTML,CSS, and Vanilla JavaScript*
+### Without any libraries or frameworks.
 
 <img width="2830" height="1562" alt="Image" src="https://github.com/user-attachments/assets/da7bfa12-51c3-457c-9ab1-bb971d453db4" />
 <img width="2838" height="1572" alt="Image" src="https://github.com/user-attachments/assets/e4dd277f-84f1-4d53-ab71-892aa0697156" />
